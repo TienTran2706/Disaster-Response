@@ -12,3 +12,6 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+### Github Repository
+You can find the repository [here](https://github.com/TienTran2706/Disaster-Response/tree/main)
