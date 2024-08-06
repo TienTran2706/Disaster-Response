@@ -68,7 +68,7 @@ def evaluate_model(model, X_test, y_test, category_names):
 
 def save_model(model, model_filepath):
     # Export the trained model as a pickle file
-    with open(model_filepath, 'wb') as file:
+    with bz2.BZ2File(model_filepath, 'wb') as file:
         pickle.dump(model, file)
 
 def main():
