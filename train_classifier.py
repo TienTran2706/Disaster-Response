@@ -5,7 +5,6 @@ nltk.download('wordnet')
 # import libraries
 import pandas as pd
 import numpy as np
-import pickle
 from sqlalchemy import create_engine
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -15,6 +14,7 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.model_selection import GridSearchCV
 
 def load_data(database_filepath):
     # load data from database
